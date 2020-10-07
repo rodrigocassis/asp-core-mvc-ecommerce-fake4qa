@@ -1,0 +1,22 @@
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.deps.json
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.runtimeconfig.json
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.runtimeconfig.dev.json
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.dll
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\bin\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.pdb
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.csprojAssemblyReference.cache
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.csproj.CoreCompileInputs.cache
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.AssemblyInfoInputs.cache
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.AssemblyInfo.cs
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.dll
+C:\Users\u0155902\Downloads\ASPNETCore20-Parte2-master (1)\ASPNETCore20-Parte2-master\Aulas\Aula5\depois\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.pdb
+C:\study\CasaDoCodigo\bin\Debug\netcoreapp2.0\eCommerce - QA.deps.json
+C:\study\CasaDoCodigo\bin\Debug\netcoreapp2.0\eCommerce - QA.runtimeconfig.json
+C:\study\CasaDoCodigo\bin\Debug\netcoreapp2.0\eCommerce - QA.runtimeconfig.dev.json
+C:\study\CasaDoCodigo\bin\Debug\netcoreapp2.0\eCommerce - QA.dll
+C:\study\CasaDoCodigo\bin\Debug\netcoreapp2.0\eCommerce - QA.pdb
+C:\study\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.csprojAssemblyReference.cache
+C:\study\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.csproj.CoreCompileInputs.cache
+C:\study\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.AssemblyInfoInputs.cache
+C:\study\CasaDoCodigo\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.AssemblyInfo.cs
+C:\study\CasaDoCodigo\obj\Debug\netcoreapp2.0\eCommerce - QA.dll
+C:\study\CasaDoCodigo\obj\Debug\netcoreapp2.0\eCommerce - QA.pdb
