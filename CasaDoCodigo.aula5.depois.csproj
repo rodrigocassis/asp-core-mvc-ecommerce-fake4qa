@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>eCommerce-QA</RootNamespace>
-    <AssemblyName>eCommerceFake4QA</AssemblyName>
+    <RootNamespace>CasaDoCodigo</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

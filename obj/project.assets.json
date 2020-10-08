@@ -13028,9 +13028,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\study\\eCommerceFake4QA\\eCommerceFake4QA.csproj",
-      "projectName": "eCommerceFake4QA",
-      "projectPath": "C:\\study\\eCommerceFake4QA\\eCommerceFake4QA.csproj",
+      "projectUniqueName": "C:\\study\\eCommerceFake4QA\\CasaDoCodigo.aula5.depois.csproj",
+      "projectName": "CasaDoCodigo.aula5.depois",
+      "projectPath": "C:\\study\\eCommerceFake4QA\\CasaDoCodigo.aula5.depois.csproj",
       "packagesPath": "C:\\Users\\u0155902\\.nuget\\packages\\",
       "outputPath": "C:\\study\\eCommerceFake4QA\\obj\\",
       "projectStyle": "PackageReference",
