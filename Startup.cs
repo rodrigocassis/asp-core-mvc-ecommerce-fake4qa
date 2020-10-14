@@ -30,8 +30,7 @@ namespace CasaDoCodigo
             string connectionString = Configuration.GetConnectionString("Default");
 
             services.AddDbContext<ApplicationContext>(options =>
-                options.UseSqlServer(connectionString)
-            );
+                options.UseMySQL(connectionString));
 
             services.AddTransient<IDataService, DataService>();
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
@@ -72,7 +71,7 @@ namespace CasaDoCodigo
             });
 
             ///<image url="$(ItemDir)\middlewares.png"/>
-            serviceProvider.GetService<IDataService>().InicializaDB().Wait();
+            serviceProvider.GetService<ApplicationContext>().Database.EnsureCreated();
         }
     }
 

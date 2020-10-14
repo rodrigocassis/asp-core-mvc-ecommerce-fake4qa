@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
@@ -43,25 +44,23 @@ namespace CasaDoCodigo.Models
         }
 
         public virtual Pedido Pedido { get; set; }
-        [MinLength(5, ErrorMessage = "Nome deve ter no mínimo 5 caracteres")]
-        [MaxLength(50, ErrorMessage = "Nome deve ter no máximo 50 caracteres")]
-        [Required(ErrorMessage = "Nome é obrigatório")]
+        [Required]
         public string Nome { get; set; } = "";
-        [Required(ErrorMessage = "Email é obrigatório")]
+        [Required]
         public string Email { get; set; } = "";
-        [Required(ErrorMessage = "Telefone é obrigatório")]
+        [Required]
         public string Telefone { get; set; } = "";
-        [Required(ErrorMessage = "Endereco é obrigatório")]
+        [Required]
         public string Endereco { get; set; } = "";
-        [Required(ErrorMessage = "Complemento é obrigatório")]
+        [Required]
         public string Complemento { get; set; } = "";
-        [Required(ErrorMessage = "Bairro é obrigatório")]
+        [Required]
         public string Bairro { get; set; } = "";
-        [Required(ErrorMessage = "Municipio é obrigatório")]
+        [Required]
         public string Municipio { get; set; } = "";
-        [Required(ErrorMessage = "UF é obrigatório")]
+        [Required]
         public string UF { get; set; } = "";
-        [Required(ErrorMessage = "CEP é obrigatório")]
+        [Required]
         public string CEP { get; set; } = "";
 
         internal void Update(Cadastro novoCadastro)
@@ -119,6 +118,7 @@ namespace CasaDoCodigo.Models
     {
         public Pedido()
         {
+
             Cadastro = new Cadastro();
         }
 
@@ -129,6 +129,7 @@ namespace CasaDoCodigo.Models
 
         public List<ItemPedido> Itens { get; private set; } = new List<ItemPedido>();
         [Required]
+        [ForeignKey("CadastroId")]
         public virtual Cadastro Cadastro { get; private set; }
     }
 }

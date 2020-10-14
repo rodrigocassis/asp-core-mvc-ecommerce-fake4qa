@@ -4,11 +4,11 @@
 
 @model List<Produto>;
 
-<h3>Catálogo</h3>
+<h3>Products</h3>
 
 <div id="my-carousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div>
 
         @{
             const int TAMANHO_PAGINA = 4;
@@ -36,11 +36,11 @@
                                 </div>
                                 <div class="panel-footer produto-footer">
                                     <div class="produto-nome">@produto.Nome</div>
-                                    <div><h4><strong>R$ @produto.Preco</strong></h4></div>
+                                    <div><h4><strong>$ @produto.Preco</strong></h4></div>
                                     <div class="text-center">
                                         <a asp-action="carrinho"
 										   asp-route-codigo="@produto.Codigo"
-										   class="btn btn-success">Adicionar</a>
+										   class="btn btn-success">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>

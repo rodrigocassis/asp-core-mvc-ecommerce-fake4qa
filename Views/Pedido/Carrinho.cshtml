@@ -3,7 +3,7 @@
 }
 @model CarrinhoViewModel;
 
-<h3>Meu Carrinho</h3>
+<h3>My Cart</h3>
 
 <form method="post" asp-action="carrinho">
 </form>
@@ -39,7 +39,7 @@
                     <img class="img-produto-carrinho" src="/images/produtos/large_@(item.Produto.Codigo).jpg" />
                 </div>
                 <div class="col-md-3">@(item.Produto.Nome)</div>
-                <div class="col-md-2 text-center">R$ @(item.PrecoUnitario)</div>
+                <div class="col-md-2 text-center">$ @(item.PrecoUnitario)</div>
                 <div class="col-md-2 text-center">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    R$ <span class="pull-right" subtotal>
+                    $ <span class="pull-right" subtotal>
                         @(item.Quantidade * item.PrecoUnitario)
                     </span>
                 </div>
@@ -78,7 +78,7 @@
                 </span>
             </div>
             <div class="col-md-2">
-                Total: R$ <span class="pull-right" total>
+                Total: $ <span class="pull-right" total>
                     @(Model.Total)
                 </span>
             </div>
@@ -90,10 +90,10 @@
     <div class="col-md-12">
         <div class="pull-right">
             <a class="btn btn-success" asp-action="carrossel">
-                Adicionar Produtos
+                Add Products
             </a>
             <a class="btn btn-success" asp-action="cadastro">
-                Preencher Cadastro
+                Registration
             </a>
         </div>
     </div>
