@@ -19,3 +19,4 @@ C:\study\eCommerceFake4QA\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.Asse
 C:\study\eCommerceFake4QA\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.AssemblyInfo.cs
 C:\study\eCommerceFake4QA\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.dll
 C:\study\eCommerceFake4QA\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.pdb
+C:\study\eCommerceFake4QA\obj\Debug\netcoreapp2.0\CasaDoCodigo.aula5.depois.csprojAssemblyReference.cache
