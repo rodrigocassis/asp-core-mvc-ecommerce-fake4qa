@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasaDoCodigo.aula5.depois", "CasaDoCodigo.aula5.depois.csproj", "{EE6A02D0-47B1-4BF0-B8BE-B05787309BD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerceFake4QA", "eCommerceFake4QA.csproj", "{EE6A02D0-47B1-4BF0-B8BE-B05787309BD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

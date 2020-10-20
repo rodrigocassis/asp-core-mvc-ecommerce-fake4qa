@@ -1,19 +1,19 @@
 ﻿@{
-	ViewData["Title"] = "Cadastro";
+    ViewData["Title"] = "Cadastro";
 }
 
 @model Cadastro
 
-<h3>Cadastro</h3>
+<h3>Register</h3>
 
 <form asp-action="resumo" method="post">
-    
+
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="control-label" for="nomeCliente">Name</label>
-                    <input type="text" class="form-control" id="nomeCliente" placeholder="Name"
+                    <input type="text" class="form-control" id="name" placeholder="Name"
                            asp-for="@Model.Nome">
                     <span asp-validation-for="@Model.Nome" class="text-danger"></span>
                 </div>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="telefone">Phone</label>
-                    <input type="text" class="form-control" id="telefone" placeholder="Phone"
+                    <input type="text" class="form-control" id="phone" placeholder="Phone"
                            asp-for="@Model.Telefone">
                     <span asp-validation-for="@Model.Telefone" class="text-danger"></span>
                 </div>
@@ -33,19 +33,19 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="control-label" for="endereco">Address</label>
-                    <input type="text" class="form-control" id="endereco" placeholder="Address"
+                    <input type="text" class="form-control" id="address" placeholder="Address"
                            asp-for="@Model.Endereco">
                     <span asp-validation-for="@Model.Endereco" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="complemento">Address Complement</label>
-                    <input type="text" class="form-control" id="complemento" placeholder="Address Complement"
+                    <label class="control-label" for="complemento">Comp</label>
+                    <input type="text" class="form-control" id="comp" placeholder="Comp"
                            asp-for="@Model.Complemento">
                     <span asp-validation-for="@Model.Complemento" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="bairro">Neighborhood</label>
-                    <input type="text" class="form-control" id="bairro" placeholder="Neighborhood"
+                    <input type="text" class="form-control" id="neighborhood" placeholder="Neighborhood"
                            asp-for="@Model.Bairro">
                     <span asp-validation-for="@Model.Bairro" class="text-danger"></span>
                 </div>
@@ -53,13 +53,13 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label class="control-label" for="municipio">City</label>
-                    <input type="text" class="form-control" id="municipio" placeholder="City"
+                    <input type="text" class="form-control" id="city" placeholder="City"
                            asp-for="@Model.Municipio">
                     <span asp-validation-for="@Model.Municipio" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="UF">State</label>
-                    <select class="form-control single-select" name="State"
+                    <select class="form-control single-select" name="UF"
                             asp-for="@Model.UF">
                         <option selected value="">[Select State]</option>
                         <option value="AC">Alpha Centauri</option>
@@ -93,8 +93,8 @@
                     <span asp-validation-for="@Model.UF" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="cep">Zip Code</label>
-                    <input type="text" class="form-control" id="cep" placeholder="Zip Code"
+                    <label class="control-label" for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="CEP"
                            asp-for="@Model.CEP">
                     <span asp-validation-for="@Model.CEP" class="text-danger"></span>
 
@@ -107,8 +107,8 @@
                 </div>
                 <div class="form-group">
                     <button type="submit"
-                            class="btn btn-success">
-                        Check Out
+                            class="btn btn-success" asp-action="resumo"> 
+                        Checkout
                     </button>
                 </div>
             </div>
