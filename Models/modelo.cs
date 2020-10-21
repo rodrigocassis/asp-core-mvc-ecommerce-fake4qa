@@ -79,7 +79,7 @@ namespace CasaDoCodigo.Models
 
     [DataContract]
     public class ItemPedido : BaseModel
-    {   
+    {
         [Required]
         [DataMember]
         public Pedido Pedido { get; private set; }
@@ -131,5 +131,65 @@ namespace CasaDoCodigo.Models
         [Required]
         [ForeignKey("CadastroId")]
         public virtual Cadastro Cadastro { get; private set; }
+    }
+
+
+    public class Inicio : BaseModel
+    {
+        public Inicio()
+        {
+        }
+
+
+    }
+
+
+
+    public class SimpleForm : BaseModel
+    {
+        public SimpleForm()
+        {
+        }
+
+        [Required]
+        public string Name { get; set; } = "";
+        [Required]
+        public string Email { get; set; } = "";
+        public string Birth { get; set; } = "";
+        [Required]
+        public string City { get; set; } = "";
+        [Required]
+        public string State { get; set; } = "";
+        public string Color { get; set; } = "";
+        public string Pets { get; set; } = "";
+        public string Happy { get; set; } = "";
+
+
+        internal void Update(SimpleForm newSimpleForm)
+        {
+
+            this.Email = newSimpleForm.Email;
+            this.City = newSimpleForm.City;
+            this.Name = newSimpleForm.Name;
+            this.Birth = newSimpleForm.Birth;
+            this.State = newSimpleForm.State;
+            this.Color = newSimpleForm.Color;
+            this.Pets = newSimpleForm.Pets;
+            this.Happy = newSimpleForm.Happy;
+
+        }
+
+    }
+
+    public class SimpleLoginForm : BaseModel
+    {
+        public SimpleLoginForm()
+        {
+        }
+
+        public int Id { get; set; }
+        public string Username { get; set; } = "";
+        public string Password { get; set; } = "";
+
     }
 }

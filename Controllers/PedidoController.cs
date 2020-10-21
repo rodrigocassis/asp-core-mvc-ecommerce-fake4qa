@@ -13,6 +13,7 @@ namespace CasaDoCodigo.Controllers
     {
         private readonly IProdutoRepository produtoRepository;
         private readonly IPedidoRepository pedidoRepository;
+
         private readonly IItemPedidoRepository itemPedidoRepository;
 
         public PedidoController(IProdutoRepository produtoRepository,
@@ -27,6 +28,11 @@ namespace CasaDoCodigo.Controllers
         public async Task<IActionResult> Carrossel()
         {
             return View(await produtoRepository.GetProdutos());
+        }
+
+        public async Task<IActionResult> Inicio()
+        {
+            return View();
         }
 
         public async Task<IActionResult> Detail()
@@ -59,6 +65,42 @@ namespace CasaDoCodigo.Controllers
             return View(pedido.Cadastro);
         }
 
+        public async Task<IActionResult> SimpleForm()
+        {
+            return View();
+
+        }
+
+        public async Task<IActionResult> SimpleFormResult()
+        {
+            return View();
+
+        }
+
+        public async Task<IActionResult> AlternativeForm()
+        {
+            return View();
+
+        }
+
+        public async Task<IActionResult> AlternativeFormResult()
+        {
+            return View();
+
+        }
+
+        public async Task<IActionResult> SimpleLoginForm()
+        {
+            return View();
+
+        }
+
+        public async Task<IActionResult> SimpleLoginResult()
+        {
+            return View();
+
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Resumo(Cadastro cadastro)
@@ -69,6 +111,7 @@ namespace CasaDoCodigo.Controllers
             }
             return RedirectToAction("Cadastro");
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

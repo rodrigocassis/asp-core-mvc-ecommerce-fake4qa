@@ -1,7 +1,10 @@
 ﻿
+@{
+    ViewData["Title"] = "AP - Automation Place";
+}
+
 @model Pedido;
 <h3>Order Summary</h3>
-
 <div class="panel panel-default">
     <div class="panel-body">
         <div class="row">
@@ -21,7 +24,7 @@
             </div>
             <div class="col-md-6">
                 <h3>Address</h3>
-                <div>@Model.Cadastro.Endereco @Model.Cadastro.Complemento - @Model.Cadastro.Bairro - CEP: @Model.Cadastro.CEP - @Model.Cadastro.Municipio - @Model.Cadastro.UF - Brasil</div>
+                <div>@Model.Cadastro.Endereco @Model.Cadastro.Complemento - @Model.Cadastro.Bairro - CEP: @Model.Cadastro.CEP - @Model.Cadastro.Municipio - @Model.Cadastro.UF</div>
             </div>
         </div>
         <hr />
@@ -33,7 +36,6 @@
                 <h3>Qty</h3>
             </div>
         </div>
-
         @foreach (var item in Model.Itens)
         {
 
@@ -47,6 +49,5 @@
                 </div>
             </div>
         }
-
     </div>
 </div>

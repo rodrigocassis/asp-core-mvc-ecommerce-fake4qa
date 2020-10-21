@@ -77,8 +77,8 @@ namespace CasaDoCodigo
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Pedido}/{action=Carrossel}/{codigo?}");
-        });
+                    template: "{controller=Pedido}/{action=Inicio}/{codigo?}");
+            });
 
             ///<image url="$(ItemDir)\middlewares.png"/>
             serviceProvider.GetService<ApplicationContext>().Database.EnsureCreated();

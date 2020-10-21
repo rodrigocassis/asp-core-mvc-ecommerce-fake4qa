@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "AP - Automation Place";
+}
+<br /><br />
+<form asp-action="SimpleFormResult" method="post">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Registration Successfully
+                    </h3>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group">
+
+
+
+                <button type="submit"
+                        class="btn btn-success" asp-action="SimpleForm">
+                    Return to Form
+                </button>
+
+                <button type="submit"
+                        class="btn btn-success" asp-action="/">
+                    Return to Home
+                </button>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</form>
+

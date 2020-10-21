@@ -1,10 +1,11 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "AP - Automation Place";
 }
 
-@model Cadastro
+@model SimpleForm;
 
-<h3>Register</h3>
+<h3>Simple Form</h3>
 
 <form asp-action="resumo" method="post">
 
@@ -14,8 +15,8 @@
                 <div class="form-group">
                     <label class="control-label" for="nomeCliente">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Name"
-                           asp-for="@Model.Nome">
-                    <span asp-validation-for="@Model.Nome" class="text-danger"></span>
+                           asp-for="@Model.Name">
+                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="email">Email</label>
@@ -24,43 +25,22 @@
                     <span asp-validation-for="@Model.Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="telefone">Phone</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Phone"
-                           asp-for="@Model.Telefone">
-                    <span asp-validation-for="@Model.Telefone" class="text-danger"></span>
+                    <label class="control-label" for="birth">Birth</label>
+
+                    <input type="date" name="bdate" class="form-control" id="birth" asp-for="@Model.Birth" />
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label class="control-label" for="endereco">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Address"
-                           asp-for="@Model.Endereco">
-                    <span asp-validation-for="@Model.Endereco" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="complemento">Comp</label>
-                    <input type="text" class="form-control" id="comp" placeholder="Comp"
-                           asp-for="@Model.Complemento">
-                    <span asp-validation-for="@Model.Complemento" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="bairro">Neighborhood</label>
-                    <input type="text" class="form-control" id="neighborhood" placeholder="Neighborhood"
-                           asp-for="@Model.Bairro">
-                    <span asp-validation-for="@Model.Bairro" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label class="control-label" for="municipio">City</label>
+                    <label class="control-label" for="endereco">City</label>
                     <input type="text" class="form-control" id="city" placeholder="City"
-                           asp-for="@Model.Municipio">
-                    <span asp-validation-for="@Model.Municipio" class="text-danger"></span>
+                           asp-for="@Model.City">
+                    <span asp-validation-for="@Model.City" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="UF">State</label>
-                    <select class="form-control single-select" name="UF"
-                            asp-for="@Model.UF">
+                    <select class="form-control single-select" name="State"
+                            asp-for="@Model.State">
                         <option selected value="">[Select State]</option>
                         <option value="AC">Alpha Centauri</option>
                         <option value="AL">Alastria</option>
@@ -90,28 +70,57 @@
                         <option value="UN">Unefra III</option>
                         <option value="ZL">Zetar</option>
                     </select>
-                    <span asp-validation-for="@Model.UF" class="text-danger"></span>
+                    <span asp-validation-for="@Model.State" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="cep">CEP</label>
-                    <input type="text" class="form-control" id="cep" placeholder="CEP"
-                           asp-for="@Model.CEP">
-                    <span asp-validation-for="@Model.CEP" class="text-danger"></span>
+                    <label class="control-label" for="UF">Favorite Color</label>
+                    <select class="form-control single-select" name="Color"
+                            asp-for="@Model.Color">
+                        <option selected value="">[Select Color]</option>
+                        <option value="BL">Black</option>
+                        <option value="WH">White</option>
+                        <option value="BL">Yellow</option>
+                        <option value="OR">Orange</option>
+                        <option value="GR">Green</option>
+                        <option value="GY">Grey</option>
+                        <option value="PK">Pink</option>
+                        <option value="PP">Purple</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label" for="municipio">Have Pets?</label><br>
+                    <input type="checkbox" value="dog"> Dog<br>
+                    <input type="checkbox" value="cat"> Cat<br>
+                    <input id="bird" type="checkbox" value="bird"> Bird<br>
+                    <input type="checkbox" value="other"> Other<br>
+
+
+
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="UF">Are you happy?</label><br />
+                    <input name="ask" type="radio" id="yes" value="Yes"> Yes <br />
+                    <input name="ask" type="radio" value="no"> No <br />
 
                 </div>
 
+
                 <div class="form-group">
-                    <a class="btn btn-success" asp-action="carrossel">
-                        Add More Products
-                    </a>
-                </div>
-                <div class="form-group">
+
+                    <button type="reset" class="btn btn-success">
+                        Clear
+                    </button>
+
                     <button type="submit"
-                            class="btn btn-success" asp-action="resumo"> 
-                        Checkout
+                            class="btn btn-success" asp-action="SimpleFormResult">
+                        Submit
                     </button>
                 </div>
             </div>
+
         </div>
     </div>
 
