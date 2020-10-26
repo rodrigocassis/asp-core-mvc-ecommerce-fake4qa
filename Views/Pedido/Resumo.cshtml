@@ -4,18 +4,18 @@
 }
 
 @model Pedido;
-<h3>Order Summary</h3>
+<h3>Order <font color="red">Summary</font></h3>
 <div class="panel panel-default">
     <div class="panel-body">
         <div class="row">
             <div class="col-md-12">
-                <h3>Order: @(Model.Id)</h3>
+                <h3>Order:<font color="red"> @(Model.Id)</font></h3>
             </div>
         </div>
         <hr />
         <div class="row">
             <div class="col-md-3">
-                <h3>Your Information</h3>
+                <h3>Your <font color="red">Information</font></h3>
                 <div>@Model.Cadastro.Nome</div>
                 <div>@Model.Cadastro.Telefone</div>
             </div>
@@ -23,17 +23,17 @@
                 @Model.Cadastro.Email
             </div>
             <div class="col-md-6">
-                <h3>Address</h3>
-                <div>@Model.Cadastro.Endereco @Model.Cadastro.Complemento - @Model.Cadastro.Bairro - CEP: @Model.Cadastro.CEP - @Model.Cadastro.Municipio - @Model.Cadastro.UF</div>
+                <h3>Delivery  <font color="red">Address</font></h3>
+                <div>@Model.Cadastro.Endereco @Model.Cadastro.Complemento - @Model.Cadastro.Bairro - Zip Code: @Model.Cadastro.ZipCode - @Model.Cadastro.Municipio - @Model.Cadastro.UF</div>
             </div>
         </div>
         <hr />
         <div class="row">
             <div class="col-md-10">
-                <h3>Item</h3>
+                <h3>Purchased <font color="red">Items</font></h3>
             </div>
             <div class="col-md-2">
-                <h3>Qty</h3>
+                <h3>Quantity</h3>
             </div>
         </div>
         @foreach (var item in Model.Itens)

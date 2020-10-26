@@ -101,6 +101,12 @@ namespace CasaDoCodigo.Controllers
 
         }
 
+        public async Task<IActionResult> AngularForm()
+        {
+            return View();
+
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Resumo(Cadastro cadastro)

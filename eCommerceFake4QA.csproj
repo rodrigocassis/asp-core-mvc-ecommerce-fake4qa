@@ -5,6 +5,7 @@
     <RootNamespace>eCommerceFake4QA</RootNamespace>
     <AssemblyName>eCommerceFake4QA</AssemblyName>
     <ApplicationIcon>wwwroot\images\favicon.ico</ApplicationIcon>
+    <UserSecretsId>9e951cb4-8b7d-40ae-9465-16c6ae1369e2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Angular.UI.Bootstrap" Version="2.5.0" />
+    <PackageReference Include="Angular.UI.UI-Router" Version="0.4.2" />
+    <PackageReference Include="angularjs" Version="1.7.8.1" />
+    <PackageReference Include="AngularJS.Core" Version="1.8.0" />
+    <PackageReference Include="bootstrap" Version="4.5.3" />
     <PackageReference Include="entityframework" Version="6.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
@@ -31,6 +37,7 @@
     <PackageReference Include="MySql.Data.Entity" Version="6.10.9" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.21" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
+    <PackageReference Include="toastr" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +53,9 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Pedido\AlternativeForm.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Pedido\AngularForm.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Pedido\SimpleLoginResult.cshtml">

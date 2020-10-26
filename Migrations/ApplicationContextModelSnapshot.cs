@@ -27,10 +27,6 @@ namespace CasaDoCodigo.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("CEP")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("Complemento")
                         .IsRequired()
                         .HasColumnType("text");
@@ -56,6 +52,10 @@ namespace CasaDoCodigo.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("UF")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ZipCode")
                         .IsRequired()
                         .HasColumnType("text");
 

@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewData["Title"] = "AP - Automation Place";
+}
+
+@model SimpleLoginForm;
+<br>
+<div ng-app="myApp" ng-controller="formCtrl">
+    <form novalidate>
+        First Name:<br>
+        <input type="text" ng-model="user.firstName"><br>
+        Last Name:<br>
+        <input type="text" ng-model="user.lastName">
+        <br><br>
+        <button ng-click="reset()">RESET</button>
+    </form>
+    <p>form = {{user}}</p>
+    <p>master = {{master}}</p>
+</div>
+
+@*<h3>Simple Login</h3>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-4">
+
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <label class="control-label" for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username-field" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password</label>
+                        <input type="password" name="password" id="password-field" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" value="Login" id="login-form-submit" asp-action="SimpleFormResult">
+                    </div>
+
+
+
+                </form>
+            </div>
+
+
+            <div class="col-md-7">
+
+
+                <div class="form-group">
+
+                    For success login<br />username: <b>somebody</b><br />password: <b>pass@5</b>
+                </div>
+
+
+            </div>
+            <div class="col-md-7">
+
+                <div class="form-group">
+
+                    <div id="login-error-msg-holder">
+                        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>*@
+
+@section Scripts
+    {
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('formCtrl', function ($scope) {
+        $scope.master = { firstName: "John", lastName: "Doe" };
+        $scope.reset = function () {
+            $scope.user = angular.copy($scope.master);
+        };
+        $scope.reset();
+    });
+</script>
+}

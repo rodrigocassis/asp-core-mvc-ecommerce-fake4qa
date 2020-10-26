@@ -3,7 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - eCommerce</title>
+    <title>@ViewData["Title"]</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
     <link rel="icon"
           type="image/png"
@@ -21,11 +26,14 @@
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
     </environment>
 
-    <style type="text/css">
-        body {
+
+    @* body {
             padding-top: 50px;
             padding-bottom: 20px;
         }
@@ -58,7 +66,7 @@
         }
 
         .navbar-brand {
-            background: url('../images/steel.jpg');
+            background: url('../images/logo-new-small-2.png');
             width: 215px;
             height: 90px;
         }
@@ -68,29 +76,12 @@
             border-color: white;
         }
 
-        .row-center {
-            display: flex;
-            align-items: center;
-        }
 
-        .img-produto-carrossel {
-            width: 100%;
-        }
 
-        .img-produto-carrinho {
-            height: 120px;
-            filter: drop-shadow(2px 2px 2px #ccc);
-        }
 
-        .linha-produto {
-            margin: 20px;
-        }
 
-        .produto-nome {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+
+
 
         .produto-footer {
             max-height: 140px;
@@ -145,33 +136,100 @@
         #success-msg-second-line {
             display: block;
         }
+        #header-wrapper {
+            background: #333333;
+        }
+        .container2 {
+            overflow: hidden;
+            margin: 0em auto;
+            width: 1000px;
+        }*@
+    <style type="text/css">
+        .img-produto-carrossel {
+            width: 100%;
+        }
 
+        .img-produto-carrinho {
+            height: 120px;
+            filter: drop-shadow(2px 2px 2px #ccc);
+        }
+
+        .linha-produto {
+            margin: 20px;
+        }
+
+        #header-wrapper {
+            background: #333333;
+        }
+
+        #header {
+            position: relative;
+            padding: 3em 0em;
+        }
+
+        .container {
+            overflow: hidden;
+            margin: 0em auto;
+            width: 1000px;
+        }
+
+        #logo {
+            position: absolute;
+            top: 1em;
+            left: 0;
+        }
+
+            #logo h1 {
+                color: #FFF;
+            }
+
+            #logo a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+        .produto-nome {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .row-center {
+            display: flex;
+            align-items: center;
+        }
+        body {
+            font-family: 'Varela', sans-serif;
+        }
+
+        .body-content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="" asp-action="Inicio" class="navbar-brand"></a>
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <a href="http://rodrigocassis-001-site3.atempurl.com/">
+                    <img src="~/images/logo-new-small.png" style="width:200px;height:60px;">
+                </a>
             </div>
-    
         </div>
-    </nav>
-    <br /><br />
+    </div>
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>
-                &copy; 2020 - Automation Place<br>
-                contact@automationplace4qa.dev
-            </p>
+            <div class="container2">
+                &copy; 2020 - Automation Place
+
+            </div>
 
         </footer>
     </div>
@@ -182,6 +240,16 @@
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+
+        <!-- Core JS Files   -->
+        <script src="/lib/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="/lib/bootstrap/tether.min.js"></script>
+        <script src="/lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- App JS Files   -->
+        <script src="/lib/angular/angular.min.js"></script>
+        <script src="/lib/angular/angular-ui-router.min.js"></script>
+
     </environment>
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using CasaDoCodigo.Repositories;
@@ -38,14 +39,20 @@ namespace CasaDoCodigo
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseMySQL(connectionString));
 
+
+
+
+
+
+
             services.AddHttpContextAccessor();
-
-
             services.AddTransient<IDataService, DataService>();
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
             services.AddTransient<IPedidoRepository, PedidoRepository>();
             services.AddTransient<ICadastroRepository, CadastroRepository>();
             services.AddTransient<IItemPedidoRepository, ItemPedidoRepository>();
+
+
 
 
         }
@@ -61,15 +68,21 @@ namespace CasaDoCodigo
             IServiceProvider serviceProvider)
         {
 
-            if (env.IsDevelopment())
+
+
+
+            app.Use(async (context, next) =>
             {
-                app.UseBrowserLink();
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+                await next();
+                if (context.Response.StatusCode == 404 && !Path.HasExtension(context.Request.Path.Value))
+                {
+                    context.Request.Path = "/AngularForm.cshtml";
+                    context.Response.StatusCode = 200;
+                    await next();
+                }
+            });
+
+            app.UseCors("CorsPolicy");
 
             app.UseStaticFiles();
             app.UseSession();
@@ -77,7 +90,7 @@ namespace CasaDoCodigo
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Pedido}/{action=Inicio}/{codigo?}");
+                    template: "{controller=Pedido}/{action=Carrossel}/{codigo?}");
             });
 
             ///<image url="$(ItemDir)\middlewares.png"/>
