@@ -15081,9 +15081,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\study\\ecommerce-fake-4qa\\eCommerceFake4QA.csproj",
+      "projectUniqueName": "C:\\study\\ecommerce-fake-4qa\\ecommerce-fake-4qa.csproj",
       "projectName": "eCommerceFake4QA",
-      "projectPath": "C:\\study\\ecommerce-fake-4qa\\eCommerceFake4QA.csproj",
+      "projectPath": "C:\\study\\ecommerce-fake-4qa\\ecommerce-fake-4qa.csproj",
       "packagesPath": "C:\\Users\\u0155902\\.nuget\\packages\\",
       "outputPath": "C:\\study\\ecommerce-fake-4qa\\obj\\",
       "projectStyle": "PackageReference",

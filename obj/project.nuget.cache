@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eDX5Ad/WX60817GCRNx/WOA/f3XxamYPvAFu5eNy+G5Gm6GNSa4thTV3epv+oW67c57xZQqOeIxGJ1OgOtYrqA==",
+  "dgSpecHash": "sDaxPpdrYOjJem+x0dLF6WMoSQ2weFqKf5jcxlCHjc0fnZZA6FyssrpjbGtPjeR3upg4UNqDKLMAJo+FiED9Uw==",
   "success": true,
-  "projectFilePath": "C:\\study\\ecommerce-fake-4qa\\eCommerceFake4QA.csproj",
+  "projectFilePath": "C:\\study\\ecommerce-fake-4qa\\ecommerce-fake-4qa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\u0155902\\.nuget\\packages\\angular.ui.bootstrap\\2.5.0\\angular.ui.bootstrap.2.5.0.nupkg.sha512",
     "C:\\Users\\u0155902\\.nuget\\packages\\angular.ui.ui-router\\0.4.2\\angular.ui.ui-router.0.4.2.nupkg.sha512",
